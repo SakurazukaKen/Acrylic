@@ -1,0 +1,23 @@
+{
+  "name": "acrylic",
+  "version": "0.0.1",
+  "description": "A css framework based on MS Project NEON",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress --inline --hot",
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "zhaozilin <sakurazukaken@163.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.2.2",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.1",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.15.0",
+    "webpack": "^2.3.0"
+  }
+}
