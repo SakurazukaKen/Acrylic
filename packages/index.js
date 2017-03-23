@@ -1,3 +1,1 @@
-import './index.scss'
-
-console.log('hello world')
+import './acrylic-typography/acrylic-typography.scss'

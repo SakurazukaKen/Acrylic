@@ -1,0 +1,16 @@
+@import "./variables";
+@import "./mixins";
+
+.acrylic-typography {
+  @include acrylic-typography-base;
+}
+
+@each $style in map-keys($acrylic-typography-styles) {
+  .acrylic-typography--#{$style} {
+    @include acrylic-typography($style);
+  }
+
+  .acrylic-typography--adjust-margin.acrylic-typography--#{$style} {
+    @include acrylic-typography-adjust-margin($style);
+  }
+}

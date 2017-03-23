@@ -1,0 +1,22 @@
+@import "./variables";
+
+@mixin acrylic-typography-base {
+  font-family: $acrylic-typography-font-family;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin acrylic-typography($style) {
+  $style-props: map-get($acrylic-typography-styles, $style);
+
+  @include acrylic-typography-base;
+
+  font-size: map-get($style-props, font-size);
+  font-weight: #{map-get($style-props, font-weight)};
+  letter-spacing: map-get($style-props, letter-spacing);
+  line-height: map-get($style-props, line-height);
+}
+
+@mixin acrylic-typography-adjust-margin($style) {
+  margin: map-get(map-get($acrylic-typography-styles, $style), margin);
+}
