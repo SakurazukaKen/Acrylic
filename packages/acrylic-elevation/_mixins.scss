@@ -1,0 +1,8 @@
+@import "./variables";
+
+@mixin acrylic-elevation($z-value) {
+  #{$acrylic-elevation-property}:
+    #{map-get($acrylic-elevation-umbra-map, $z-value)} $acrylic-elevation-umbra-color,
+    #{map-get($acrylic-elevation-penumbra-map, $z-value)} $acrylic-elevation-penumbra-color,
+    #{map-get($acrylic-elevation-ambient-map, $z-value)} $acrylic-elevation-ambient-color;
+}

@@ -1,0 +1,7 @@
+@import "./mixins";
+
+@for $z-value from 0 through 24 {
+  .acrylic-elevation--z#{$z-value} {
+    @include acrylic-elevation($z-value);
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="" type="stylesheet" href="bundle.css">
+    <style>
+      .block {
+        width: 200px;
+        height: 150px;
+        background: rgba(255,255,255,0.1);
+        overflow: hidden;
+        position: relative;
+      }
+      .block:before {
+        top: 0; right: 0; bottom: 0; left: 0;
+        position: absolute;
+        content: '';
+        z-index: -1;
+        filter: blur(20px);
+        margin: -30px;
+      }
+      body .block:before {
+        background: repeating-linear-gradient(pink, 50%, lemonchiffon);
+        background-size: auto 20px;
+      }
+    </style>
+  </head>
+  <body class='acrylic-typography'>
+    <div class="block acrylic-elevation--z1"></div>
+  <script src="bundle.js" charset="UTF-8"></script>
+  </body>
+</html>
